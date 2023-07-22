@@ -1,0 +1,227 @@
+/* 
+US OPEN:
+	blue: 3C638E
+	green: 6C935C
+
+WIMBLEDON:
+	green: #536D33
+	purple: #563783
+
+*/
+
+* {
+	font-family: 'Poppins', sans-serif;
+	text-decoration: none;
+}
+
+body {
+	background-color: #6C935C; !important;
+}
+
+/* NAVBAR */
+
+.navbarHome {
+	color: white;
+	background-color: #3C638E;
+}
+
+.navbarProducts {
+	color: white;
+	background-color: #563783;
+}
+
+.container-fluid {
+	max-width: 1140px;
+}
+
+a.nav-link:link, a.nav-link:active, a.nav-link:visited {
+	color: white;
+	border: 2px white solid;
+	border-radius: 5px;
+}
+
+a.nav-link:hover {
+	font-weight: bold;
+	color: #bec8d8;
+	border: 2px #bec8d8 solid;
+}
+.navbar-brand {
+	text-align: center;
+	background-color: white;
+}
+
+/* HOME PAGE */
+
+.homeLogoContainer {
+	background-color: white;
+}
+
+.homeLogo {
+	width: fit-content;
+}
+#homeLogoLabel {
+	position: absolute;
+	left: 50%;
+	width: 500px;
+	transform: translateX(-50%);
+	color: #3C638E;
+	background-color: white;
+	font-size: 3em;
+	text-align: center;
+}
+a#phone:link, a#phone:visited, a#phone:active {
+	color: #3C638E;
+	font-size: 0.75em;
+	text-decoration: none;
+}
+a#phone:hover {
+/*	font-weight: 900;*/
+text-shadow: 1px 1px 2px pink;
+}
+
+@media (min-width: 640px) {
+	#homeLogoImg {
+		width: 600px;
+	}
+	#homeLogoLabel {
+		top: 153px;	
+	}
+}
+@media (min-width: 440px) and (max-width: 639px) {
+	img#homeLogoImg {
+		width: 400px;
+		height: 300px;
+	}
+	#homeLogoLabel {
+		top: 102px;	
+		font-size: 2em;
+		width: 350px;
+	}
+	.homeMenuImg {
+		width: 200px;
+		height: 200px;
+	}
+	div.homeMenuLabel {
+		width: 200px;
+		font-size: 1.25em;
+		bottom: 37.5px;
+	}
+	iframe#map {
+		width: calc(100% - (100% - 424px)/2);
+	}
+	div#mapLabel {
+		width: calc(100% - (100% - 424px)/2);
+		font-size: 1.25em;
+		bottom: 37.5px;
+	}
+}
+@media (max-width: 439px) {
+	img#homeLogoImg {
+		width: 352px;
+		height: 264px;
+	}
+	#homeLogoLabel {
+		top: 96px;	
+		font-size: 1.5em;
+		width: 280px;
+	}
+	.homeMenuImg {
+		width: 300px;
+		height: 300px;
+	}
+	div.homeMenuItem {
+		clear: both;
+		width: 100%;
+	}
+	div.homeMenuLabel {
+		width: 300px;
+		font-size: 1.25em;
+		bottom: 37.5px;
+	}
+	iframe#map {
+		width: 300px
+	}
+	div#mapLabel {
+		width: 300px
+		font-size: 1.25em;
+		bottom: 37.5px;
+	}
+}
+
+
+.homeMenu {
+	background-color: #6C935C;
+}
+
+.homeMenuItem {
+	text-align: center;
+}
+
+.homeMenuLabel, #mapLabel{
+	font-size: 1.5em;
+	position: relative;
+	bottom: 45px; /*CHANGE THIS VALUE DEPENDING ON THE FONT CHOICES*/
+	width: 300px;
+	padding: 4px 0;
+	background-color: white;
+	color: #3C638E;
+}
+.linkClass:link, .linkClass:active, .linkClass:visited {
+	text-decoration: none;
+}
+
+@media (max-width: 991px) and (min-width: 640px) {
+	#map {
+		clear: left;
+		height: 300px;
+		width: calc(100% - (100% - 624px)/2);
+	}
+	div#mapLabel {
+		width: calc(100% - (100% - 624px)/2);
+		bottom: 45px;
+	}
+}
+
+/* PRODUCTS PAGE */
+
+#productsLogoLabel {
+	position: absolute;
+	left: 50%;
+	width: 500px;
+	transform: translateX(-50%);
+	color: #3C638E;
+	background-color: white;
+	font-size: 3em;
+	text-align: center;
+}
+
+@media (min-width: 640px) {
+	#productsLogoImg {
+		width: 600px;
+	}
+	#productsLogoLabel {
+		top: 189px;	
+	}
+}
+
+#productsLogoLabel {
+	color: #563783;
+}
+
+/* FOOTER */
+
+#footerHead {
+	font-size: 1.5em;
+	text-decoration: underline;
+	font-weight: bold;
+}
+.hours {
+	text-align: center;
+}
+#credit {
+	width: 100%;
+	background-color: #3C638E;
+	color: white;
+	font-size: 0.8em;
+}
+
