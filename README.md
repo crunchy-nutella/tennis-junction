@@ -1,4 +1,5 @@
 # Tennis Junction
+Uses Parcel for bundling.
 
 ## Installation and setup
 Run `npm i` in the root directory to install all packages.
