@@ -1,0 +1,13 @@
+{
+  "name": "tennis-junction",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "src",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "parcel": "^2.9.3",
+    "process": "^0.11.10"
+  }
+}
