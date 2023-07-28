@@ -18,22 +18,22 @@
 <body>
 	<div class="navbar navbarProducts navbar-expand-md">
 	  <div class="container-fluid">
-	  	<a class="navbar-brand g-col-3 pb-0 pt-1" href="#">
+	  	<a class="navbar-brand g-col-3 pb-0 pt-1 mb-2" href="index.html">
      		<img src="../Tennis-Junction/images/logo.jpeg" alt="Bootstrap" width="150">
    		</a>
 	    <button class="navbar-toggler g-col-6 g-start-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	      <span class="navbar-toggler-icon"></span>
+	      <span class="custom-togger navbar-toggler-icon"></span>
 	    </button>
 	    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 		     <ul class="navbar-nav column-gap-3">
 		     	<li class="nav-item">
-		    	<a class="nav-link" aria-current="page" href="#">Home</a>
+		    	<a class="nav-link my-1 px-2" aria-current="page" href="index.html">Home</a>
 		        </li>
 		    	<li class="nav-item">
-		          <a class="nav-link" href="#">Products and Services</a>
+		          <a class="nav-link my-1 px-2" href="products.html">Products and Services</a>
 		      	</li>
 		        <li class="nav-item">
-		          <a class="nav-link" href="#">Contact Us</a>
+		          <a class="nav-link my-1 px-2" href="contact.html">Contact Us</a>
 		        </li>  
 		      </ul>
 	    </div>
@@ -42,35 +42,179 @@
 
 
 	<div class="container-fluid my-5 homeLogoContainer position-relative">
-		<div class="homeLogo mx-auto">
-			<img id="homeLogoImg"class="g-col-6" src="" width="600" height="450">
-		</div>
 		<div id="productsLogoLabel" class="homeLogo mx-auto">
-			<div>Products</div>
+			<div>Products and Services</div>
 		</div>
 
 	</div>
-	<div class="homeMenu">
+	<div class="productMenu">
 	<div class="container-fluid">
-		<div class="row">
-			<div class="col-lg-4 col-6 mt-4 justify-content-between  homeMenuItem">
-				<a class="linkClass" href="#">
-				<img class="productMenu" src="" width="300" height = "300">
-				<div class="productMenuLabel mx-auto">Products</div>
+		<div class="row pb-4">
+			<div class="col-6 mt-4 justify-content-between  productMenuItem">
+				<a type="button" class=" linkClass" data-bs-toggle="modal" data-bs-target="#racquetsModal">
+				<div class="productMenuItemContainer">
+				<img class="productMenuImg" src="images/productsRacquets.jpeg" width="300" height = "300">
+				<div class="productMenuLabel mx-auto">Racquets and Demos</div>
+				<div class="productMenuDiscr"></div>
+				</div>
 				</a>
+
+
+				<!-- Modal -->
+				<div class="modal fade" id="racquetsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+				  <div class="modal-dialog modal-fullscreen-md-down modal-lg">
+				    <div class="modal-content">
+				      <div class="modal-body">
+				        <div class="container-fluid text-start">
+				        	<div class="modalTitle">Racquets and Demos</div>
+				        	<button type="button" class="btn-close modalCloseX .d-lg-none" data-bs-dismiss="modal" aria-label="Close"></button>
+				        	<div class="modalListTitle">For Sale:</div>
+				        	<ul>
+				        		<li class="modalListItem">Tennis: Babolat, Dunlop, Head, Tecnifibre, Wilson and Yonex</li>
+				        		<li class="modalListItem">Pickleball: Joola, Selkirk, Master Athletics, Wilson, Babolat, Head and Holbrook  (We can order other brands for you)</li>
+				        		<li class="modalListItem">Padel: Wilson, Technifibre, Babolat</li>
+				        		<li class="modalListItem">Squash: Wilson, Technifibre</li>
+				        		<li class="modalListItem">Platform Tennis (Paddle):  Xenon, Master Athletics and Wilson</li>
+				        	</ul>
+
+				        	<div class="modalListTitle">Demos:</div>
+							<div class="modalContent">
+								All <span class="fw-bolder">tennis racquets, pickleball, platform, and padel paddles</span> for sale are  available to demo.<br><br>
+								There is a $25.00, one-time fee to demo, during a 2 month time period. Demo up to three Racquets / Paddles  at a time, for three days at a time. It might take more than one demo session to determine which racquet suits your needs. The demo fee is then credited towards the purchase of any new adult frame.<br><br>
+								Bring your current racquet with you to begin the demo process, as it gives us a great starting point of what you you might want to demo. As MRT and CS certified stringers, we are able to assist you in determining the racquet best suited to your game.
+								</div>
+
+				        </div>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
 			</div>
-			<div class="col-lg-4 col-6 mt-4 justify-content-between homeMenuItem">
-				<a class="linkClass" href="#">
-				<img class="productMenu" src="" width="300" height = "300">
+
+
+			<div class="col-6 mt-4 justify-content-between  productMenuItem">
+				<a type="button" class=" linkClass" data-bs-toggle="modal" data-bs-target="#stringingModal">
+				<div class="productMenuItemContainer">
+				<img class="productMenuImg" src="images/productsStrings.jpeg" width="300" height = "300">
 				<div class="productMenuLabel mx-auto">Stringing</div>
+				<div class="productMenuDiscr"></div>
+				</div>
 				</a>
+
+				<div class="modal fade" id="stringingModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+				  <div class="modal-dialog modal-fullscreen-md-down modal-lg">
+				    <div class="modal-content">
+				      <div class="modal-body">
+				        <div class="container-fluid text-start">
+				        	<div class="modalTitle">Stringing</div>
+				        	<button type="button" class="btn-close modalCloseX .d-lg-none" data-bs-dismiss="modal" aria-label="Close"></button>
+				        	Bring your own string or choose from our many options from Head, Luxilon, Solinco, Wilson, Babolat. We string both tennis and squash racquets.<br><br>
+							Two Master Racquet Technicians (MRT), and four Certified Stringers (CS), with the United States Racquet Stringer’s Association (USRSA) are on staff. Philip van Asselt, has been a member of the USRSA since 1998 and is also a member of the International Alliance of Racquet Stringers (IART) dedicated to improving and promoting stringing and serving the needs of the tennis playing community.<br><br>
+							<img src="images/mrt.jpeg" width=280 height=180 class="col-6 float-end" style="object-fit:scale-down;">
+							An understanding of string and how it reacts is what defines a certified racquet stringer. Let us help you take some of the guesswork out of the array of options available. Our stringer’s have worked at the highest level, stringing for the pros on the ATP & WTA Tour. The pros on tour expect consistency and we strive to bring the same level of commitment to our customers.<br><br>Due to high volume of racquet stringing, same day stringing isn’t always available – usual stringing turn-around is 24 hours.
+
+
+
+
+
+
+
+				        </div>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
 			</div>
+
+
+			<div class="col-6 mt-4 justify-content-between  productMenuItem">
+				<a type="button" class=" linkClass" data-bs-toggle="modal" data-bs-target="#apparelModal">
+				<div class="productMenuItemContainer">
+				<img class="productMenuImg" src="images/productsApparel.jpeg" width="300" height = "300">
+				<div class="productMenuLabel mx-auto">Shoes and Apparel</div>
+				<div class="productMenuDiscr"></div>
+				</div>
+				</a>
+
+
+				<!-- Modal -->
+				<div class="modal fade" id="apparelModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+				  <div class="modal-dialog modal-fullscreen-md-down modal-lg">
+				    <div class="modal-content">
+				      <div class="modal-body">
+				        <div class="container-fluid text-start">
+				        	<div class="modalTitle">Shoes and Apparel</div>
+				        	<button type="button" class="btn-close modalCloseX .d-lg-none" data-bs-dismiss="modal" aria-label="Close"></button>
+				        	<div class="modalListTitle">Shoes:</div>
+				        	The Supply chain issues seem to be behind us although some brands are still in short supply going into Spring 2023.<br><br>We have good supplies of  Wilson, Nike, Diadora, K Swiss, Mizuno, Yonex and Adidas footwear at this time.  Asics has closed most Tennis Retail accounts at this moment and is no longer consistently available.
+				        	
+				        	<div class="modalListTitle">Apparel:</div>
+				        	A full selection of the latest Women’s, Men’s and Children’s apparel from <span class="fw-bolder">Nike, Adidas, Babolat, Fila, Lacoste, Yonex, Inphorm, Sofibella, Bolle and Boast.</span> Stop in today for the best selection of new merchandise.
+
+
+
+				        </div>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+
+			<div class="col-6 mt-4 justify-content-between  productMenuItem">
+				<a type="button" class=" linkClass" data-bs-toggle="modal" data-bs-target="#moreModal">
+				<div class="productMenuItemContainer">
+				<img class="productMenuImg" src="images/productsMore.jpeg" width="300" height = "300">
+				<div class="productMenuLabel mx-auto">More Equipment</div>
+				<div class="productMenuDiscr"></div>
+				</div>
+				</a>
+				<!-- Modal -->
+				<div class="modal fade" id="moreModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+				  <div class="modal-dialog modal-fullscreen-md-down modal-lg">
+				    <div class="modal-content">
+				      <div class="modal-body">
+					        <div class="container-fluid text-start">
+					        	<div class="modalTitle">More Equipment</div>
+					        	<button type="button" class="btn-close modalCloseX .d-lg-none" data-bs-dismiss="modal" aria-label="Close"></button>
+
+					        	<div class="modalListTitle">Racquet Bags:</div>
+					        	Totes, backpacks, and racquet bags of varying sizes from 3 to 15 racquet bags from Ame & Lulu, Babolat, Wilson, Head, Nike, Yonex, Dunlop, Solinco, Tecnifibre, Adidas, Joola, Selkirk, JP Sports.
+
+					        	<div class="modalListTitle">Ball Machine:</div>
+					        	Tennis Junction sells Slinger Ball Machines. Portable and lightweight. Stop by, or call for more details.
+
+					        	<div class="modalListTitle">Court Equipment:</div>
+					        	Let us be your source for your private court needs such as nets, tennis court roll drying equipment, ball machines and court-side seating.
+
+
+
+
+
+					        </div>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+
 		</div>
 		</div>
 	</div>
 	</div>	
 
-	<div class="container-fluid mt-3">
+	<div class="container-fluid mb-3">
 		<div class="row">
 			<div class="col hours">
 				<div id="footerHead"> 
@@ -84,8 +228,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="mt-2 px-5 py-2" id="credit">
-		Designed by Jonah Zimmer 2023<br>samzimmer2017@gmail.com
+	<div class="mt-2 py-2 credit" id="productCredit">
+		<div class="container-fluid"> Front and back end design by Jonah Zimmer 2023<br>jszimmer545@gmail.com</div>
 	</div>
 	
 </body>
