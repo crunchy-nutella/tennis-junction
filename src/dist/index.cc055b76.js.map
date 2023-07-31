@@ -1,0 +1,1 @@
+{"mappings":"AAAA,2BAA2B;AAE3B,QAAQ,IAAI;AAEZ,QAAQ,IAAI","sources":["src/js/script.js"],"sourcesContent":["// TODO: Add Firebase logic\n\nconsole.log('aggo');\n\nconsole.log(dataSaved);"],"names":[],"version":3,"file":"index.cc055b76.js.map","sourceRoot":"/__parcel_source_root/"}
