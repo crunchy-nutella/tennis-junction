@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<script src="js/script.js"></script>
-	<script scr="bootstrap/js/bootstrap.min.js"></script>
-	<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script type=module src="firebase/index.js"></script>
+	<script type="module" src="../../packages/lib/firebase.js"></script>
+	<script scr="../js/bootstrap.js"></script>
+	<script src="../js/bootstrap.bundle.js"></script>
+	
 
-	<link rel="stylesheet" href="../Tennis-Junction/css/styles.css">
-	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="../style/styles.css">
+	<link rel="stylesheet" href="../style/bootstrap.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Poppins&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
 	<div class="navbar navbarHome navbar-expand-md">
 	  <div class="container-fluid">
 	  	<a class="navbar-brand g-col-3 pb-0 pt-1 mb-2" href="index.html">
-     		<img src="../Tennis-Junction/images/logo.jpeg" alt="Bootstrap" width="150">
+     		<img src="../static/images/logo.jpeg" alt="Bootstrap" width="150">
    		</a>
 	    <button class="navbar-toggler g-col-6 g-start-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="custom-togger navbar-toggler-icon"></span>
@@ -39,42 +39,44 @@
 	    </div>
 	  </div>
 	</div>
+	<div id="homeNotice"></div>
 
 
-	<div class="container-fluid my-5 homeLogoContainer position-relative">
+	<div class="container-fluid homeLogoContainer position-relative">
 		<div class="homeLogo mx-auto">
-			<img id="homeLogoImg"class="g-col-6" src="" width="600" height="450">
 		</div>
 		<div id="homeLogoLabel" class="homeLogo mx-auto">
+			<img class="mt-3 mb-2" src="../static/images/homeLogo.jpg" width="75">
 			<div>Tennis Junction</div>
 			<a id="phone" href="tel:610-525-2504">610-525-2504</a>
 		</div>
 
+
 	</div>
 	<div class="homeMenu">
 	<div class="container-fluid">
-		<div class="row">
-			<div class="col-lg-3 col-6 mt-4 justify-content-between  homeMenuItem">
-				<a class="linkClass" href="products.html">
-				<img class="homeMenuImg" src="" width="250" height = "250">
-				<div class="homeMenuLabel mx-auto">Products / Services</div>
-				</a>
-			</div>
+		<div class="row">	
 			<div class="col-lg-3 col-6 mt-4 justify-content-between homeMenuItem">
 				<a class="linkClass" data-bs-toggle="modal" href="products.html" data-bs-target="#stringingModal">
-				<img class="homeMenuImg" src="" width="250" height = "250">
+				<img class="homeMenuImg" src="../static/images/homeMenuServices.jpeg" width="225" height = "225">
 				<div class="homeMenuLabel mx-auto">Stringing</div>
 				</a>
 			</div>
 			<div class="col-lg-3 col-6 mt-4 justify-content-between homeMenuItem">
 				<a class="linkClass" href="#">
-				<img class="homeMenuImg" src="" width="250" height="250">
+				<img class="homeMenuImg" src="../static/images/homeMenuRacquets.jpeg" width="225" height="225">
 				<div class="homeMenuLabel mx-auto">Racquets / Demos</div>
+				</a>
+			</div>
+			<div class="col-lg-3 col-6 mt-4 justify-content-between  homeMenuItem">
+				<a class="linkClass" href="products.html">
+				<img class="homeMenuImg" src="#" width="225" height = "225">
+				<div class="homeMenuLabel mx-auto">Products / Services</div>
 				</a>
 			</div>
 			<div class="col-lg-3 col-6 mt-4 justify-content-between homeMenuItem">
 				<a class="linkClass" href="#">
-				<img class="homeMenuImg" src="" width="250" height="250">
+				<img class="homeMenuImg" src="#" width="225" height="225">
 				<div class="homeMenuLabel mx-auto">Navigate</div>
 				</a>
 			</div>
