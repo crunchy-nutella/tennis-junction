@@ -1,6 +1,6 @@
-import firebase from 'firebase/app';
-import 'firebase/firestore';
-import { getDatabase } from "firebase/database";
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/firestore';
+import { getDatabase } from "firebase/compat/database";
 import { useFirebase } from "./firebaseLogic.js";
 import { getStorage } from "firebase/storage";
 
