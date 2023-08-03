@@ -1,0 +1,12 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "parcel pages/index.html",
+    "build": "parcel build --public-url ./ pages/index.html --dist-dir build"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8"
+  }
+}

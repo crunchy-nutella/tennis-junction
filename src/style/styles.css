@@ -105,13 +105,21 @@ text-shadow: 1px 1px 2px pink;
 		width: 200px;
 		height: 200px;
 	}
-	div.homeMenuLabel, div.productMenuLabel.mx-auto {
+	div.homeMenuLabel {
 		bottom: 32px;
 		width: 200px;
 		font-size: 1em;
 	}
+	div.productMenuLabel.mx-auto {
+		width: 200px;
+		bottom: 0px;
+		font-size: 1em;
+	}
 }
 @media (max-width: 439px) {
+	#homeLogoLabel {
+		font-size: 1.5em;
+	}
 	img#productLogoImg {
 		width: 352px;
 		height: 264px;
@@ -122,17 +130,19 @@ text-shadow: 1px 1px 2px pink;
 		width: 280px;
 	}
 	.homeMenuImg, .productMenuImg {
-		width: 300px;
-		height: 300px;
-	}
-	div.homeMenuItem, div.productMenuItem {
-		clear: both;
 		width: 100%;
+		height: auto;
 	}
-	div.homeMenuLabel, div.productMenuLabel {
-		width: 300px;
-		font-size: 1.25em;
-		bottom: 38px;
+
+	div.homeMenuLabel {
+		width: 100%;
+		font-size: 3.5vw;
+		bottom: 22.6px;
+	}
+	div.productMenuLabel {
+		width: 100% !important;
+		font-size: 3.8vw !important;
+		bottom: 0px;
 	}
 }
 
@@ -143,9 +153,9 @@ text-shadow: 1px 1px 2px pink;
 	text-align: center;
 }
 .homeMenuLabel {
-	font-size: 1.25em;
+	font-size: 1.2em;
 	position: relative;
-	bottom: 38px;
+	bottom: 36.8px;
 	width: 225px;
 	padding: 4px 0;
 	background-color: white;
@@ -197,11 +207,11 @@ text-shadow: 1px 1px 2px pink;
 	border: white dotted 2px;
 }
 
-div.productMenuLabel{
+div.productMenuLabel {
 	font-size: 1.5em;
 	position: absolute;
 	bottom: 0px;
-	width: 300px;
+	width: 275px;
 	padding: 4px 0;
 	background-color: white;
 	color: #536D33;
